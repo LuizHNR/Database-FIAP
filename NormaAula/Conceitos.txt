@@ -3,4 +3,5 @@ Norma
 ÑN --> Tudo em uma unica entidade
 1FN --> Atributos multivalorados
 2FN --> Atributos com Dependencia: total e parcial
+3FN --> Dependencia transitiva
 	
