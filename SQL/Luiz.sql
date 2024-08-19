@@ -88,4 +88,24 @@ fk_cargo  Number(4) constraint func_cargo_fk references cargo
 obs fk: column_name datatype(syze) [constraint] references table_name
 
 references é a criação da foreign key (fk) ou a chave estrangeira
+
+Tabela: peca - id_peca - N - 6 - PK
+                nm_peca - A - 50 - Nn, Uk
+                qte - N - 6,2 - Nn
+                preco - N - 8,2
+                
+
+create table Peca (
+id_peca Number(6) constraint peca_id Primary key,
+nm_peca varchar constraint peca_nm_nn Not null
+                constraint peca_nm_uk,
+qte Number(6,2) constraint peca_qte_nn Not null,
+preco Number(8,2)
+);
+
+create table Venda(
+n_venda Number(6) constraint num_venda_pk Primary key,
+dt_venda Date constraint dat_venda_nn Not null,
+total_venda Number(10,2) constraint tt_venda_nn Not null
+);
                         
