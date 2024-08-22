@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="588BDFA2-91F4-175D-D39D-54D8C50102B5" containerWithKeyObject="15253DFF-23BE-199C-DC33-1A6F1D4F2DD6" localFKIndex="B79416C6-D7C0-9079-512E-E4F55E2DA775" name="Endereco_Guincho_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>069C35F8-D36C-9296-6839-77699D58130F</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<referredTableLongName>Guincho</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0BC90E3F-4C85-C931-F378-7AA715C3796E</referredTableID>
+<keyObject>E6197040-926E-252C-932A-71C44AF5ACE0</keyObject>
+<referredKeyID>E6197040-926E-252C-932A-71C44AF5ACE0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_guincho</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

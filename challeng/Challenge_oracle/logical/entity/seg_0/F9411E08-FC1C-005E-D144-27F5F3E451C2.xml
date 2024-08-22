@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9411E08-FC1C-005E-D144-27F5F3E451C2" name="Avaliacao">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:47:44 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_avaliacao" id="11C64F34-6328-74BF-F8A5-1672A10C4E21">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:47:52 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="A6861B93-D75B-A26F-26C1-0F39E35EE3A0">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:49:48 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="F95A9AE8-1BA0-0747-2C01-E0B70F76FF2A">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:50:24 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comentario" id="4228D3BB-5F22-DEB3-AFF9-3ED0141FEADD">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:50:48 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qualidade" id="90A97D3E-9E98-A307-4B9F-DAD9D2B2C8C8">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:51:17 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="2094AA64-52A0-1942-E76C-57293FB830E3">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:55:45 UTC</createdTime>
+<generatorID>DF4868CE-7746-70B1-B839-20B9F3C4AADD</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<referedAttribute>8117FE13-1B25-4A35-48A0-391AAC669C10</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6FC798AD-C587-97F5-1B5F-6B24A4FC4A56" name="Avaliacao PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:49:12 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11C64F34-6328-74BF-F8A5-1672A10C4E21</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

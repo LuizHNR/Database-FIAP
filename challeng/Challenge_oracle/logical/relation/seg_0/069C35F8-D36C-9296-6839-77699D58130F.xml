@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contem" directorySegmentName="seg_0" id="069C35F8-D36C-9296-6839-77699D58130F">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:01:53 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<sourcePk>4CDEDA62-E606-65DB-C1A7-A3C73578F8C7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8B63A64E-405C-12A4-DFC1-49822864C6E2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ACF0546D-7200-6C4A-CE2E-00ABA5A1E813</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

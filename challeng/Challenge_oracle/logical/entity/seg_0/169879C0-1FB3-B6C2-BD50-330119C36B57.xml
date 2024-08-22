@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="169879C0-1FB3-B6C2-BD50-330119C36B57" name="Veiculo">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:12:49 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="placa" id="96102DC5-636F-2BBB-7CC8-247B94F1A594">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:13:01 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cor" id="75645279-C0F8-98AA-CDB5-F8A36EA7C896">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:13:49 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modelo" id="076C7907-6FC0-3DB0-AEA0-0D79F070D8DC">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:14:17 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ano" id="E4D03ECE-4F6D-A90D-24E8-B55888369152">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:14:34 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E816D486-3135-BD95-EDFE-1EEE833A42C2" name="Veiculo PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:13:43 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>96102DC5-636F-2BBB-7CC8-247B94F1A594</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

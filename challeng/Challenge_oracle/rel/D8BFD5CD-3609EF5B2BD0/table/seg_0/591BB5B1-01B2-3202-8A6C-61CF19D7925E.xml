@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="591BB5B1-01B2-3202-8A6C-61CF19D7925E" name="pertence">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Clientes_cpf" id="B122E7EB-A788-63FB-A9BD-B8E550445ECB">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="665FA37D-7610-E53E-E457-048E52819F66" referredColumn="C368EC63-59D2-1649-121D-F6A28CCA9EAE"/>
+</associations>
+</Column>
+<Column name="Veiculo_placa" id="FDE0BBFA-CDDE-EF07-C397-EB4EF78A69FD">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="756F7666-8133-C15D-B45A-DBA785EC3D1C" referredColumn="8C890976-7564-B3BA-BC76-368953C269CB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF89BB63-AF0A-E739-D94F-681B357DC2A4" name="pertence_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B122E7EB-A788-63FB-A9BD-B8E550445ECB"/>
+<colUsage columnID="FDE0BBFA-CDDE-EF07-C397-EB4EF78A69FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E751F7E7-DEAC-F81D-CA29-01EC80366055" name="pertence_Clientes_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>4335DAD6-D8DB-68FF-97F8-FBB0B35E7C19</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B122E7EB-A788-63FB-A9BD-B8E550445ECB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C7FE781-9E4A-6558-C0C1-24B13F97993B" name="pertence_Veiculo_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>4335DAD6-D8DB-68FF-97F8-FBB0B35E7C19</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDE0BBFA-CDDE-EF07-C397-EB4EF78A69FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

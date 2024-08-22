@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15253DFF-23BE-199C-DC33-1A6F1D4F2DD6" name="Endereco">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>ACF0546D-7200-6C4A-CE2E-00ABA5A1E813</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cordenada" id="FD90CDFC-5B96-B78D-3812-44FD39F027B3">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>795E43FF-A7BA-351C-0A13-767C0C6584A8</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cep" id="3B9754DD-7D4E-C6AE-B80B-27801866C3D1">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>C457988A-B090-9617-61E7-E46B946B1F9B</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="CF6B812C-4586-4C2D-983A-D73B049C99C2">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>CB8F40A9-7136-FBC5-3073-3C75E6828601</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cidade" id="B3FEB812-8229-C1C4-A68E-357C94918687">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>33807380-53F4-D715-01EB-22735934DC09</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rua" id="C08F434A-087F-7BE6-5281-5674AA6B49BE">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>1F5DAD87-2199-D1E9-0907-3ECFFD837F73</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Conta_email" id="4824A4B7-431D-B216-9D0E-9CD76FED01FE">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>63869CEA-536C-BB75-4174-BF90463A6F63</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3ADB554A-4D49-D649-DC5D-434C8081EBEF" referredColumn="609F0E61-B3F4-8544-E933-8B571ACE58D8"/>
+</associations>
+</Column>
+<Column name="Guincho_id_guincho" id="710BD257-D26F-60D6-5102-B2681E31A882">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>364032C5-D597-05C3-9A38-076671555DAF</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="588BDFA2-91F4-175D-D39D-54D8C50102B5" referredColumn="BFE04945-9193-0440-B190-BFDE57DD54B7"/>
+</associations>
+</Column>
+<Column name="Oficina_Mecanico_id_mecanico" id="C6389CD0-B15C-A97A-6B22-37E6A7AC3672">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>ED09E3AB-2605-8F21-FF59-058A97DAFF33</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="144B82EB-223F-6C58-D209-9C78FF98B63C" referredColumn="2F94ED1F-3E64-FBC9-C072-343AE09A1BFA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C51A82DE-A4E2-732B-9142-BF10B7FE3B09" name="Endereco_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>DE40A78B-35ED-DBFC-4582-CF266B873726</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD90CDFC-5B96-B78D-3812-44FD39F027B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B79416C6-D7C0-9079-512E-E4F55E2DA775" name="Endereco_Guincho_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>069C35F8-D36C-9296-6839-77699D58130F</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="710BD257-D26F-60D6-5102-B2681E31A882"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6961831B-00FE-FD8A-B25B-2B0EF0D13FEA" name="Endereco_Conta_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>7677AC26-4EF1-5812-D3C5-E177FF5B8E6B</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4824A4B7-431D-B216-9D0E-9CD76FED01FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25EA07BF-ABF7-C44D-E758-DCD45D3528E4" name="Endereco_Oficina_Mecanico_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>34005463-D892-794E-8CAF-F99E767AD66A</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6389CD0-B15C-A97A-6B22-37E6A7AC3672"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

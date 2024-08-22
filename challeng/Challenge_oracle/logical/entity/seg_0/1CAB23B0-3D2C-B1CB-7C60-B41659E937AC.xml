@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1CAB23B0-3D2C-B1CB-7C60-B41659E937AC" name="Nota_fiscal">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:40:57 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_servico" id="09C9F16F-E6AD-1625-0126-50F33275062C">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:41:15 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="forma_pagamento" id="6DFAC603-7EDF-81D9-AB4A-A14A422B9F06">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:41:31 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_pagamento" id="E24122A8-8E78-38D8-90BE-CC4A0893B0E2">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:41:50 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="15FC06E2-4B03-8ADE-0E9C-64A471C34117">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:42:06 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servico1" id="20C0C847-8A82-8FC3-F8A6-F69D9FE0A453">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:42:38 UTC</createdTime>
+<generatorID>889101C3-606C-5F8D-BF90-664ADBCEE80A</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<referedAttribute>21AC2ADD-4EF4-37FE-D216-0E58C30E904F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="82CF48A3-00A0-DA83-31B9-0631CCD42DF0" name="Nota_fiscal PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:41:27 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>09C9F16F-E6AD-1625-0126-50F33275062C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDFA2002-6C27-C930-7CF7-905754BF844C" name="Servico">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>2394117C-44DB-E438-035D-650C5F11D312</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_servico" id="E4B5BDEE-F1FB-7AEB-C577-993AD29DC6DE">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>21AC2ADD-4EF4-37FE-D216-0E58C30E904F</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_servico" id="59DA7E77-6142-31BD-4911-D9F8CC1CAB9E">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>50D87337-E5E4-0753-6794-2BF634650C1D</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="problema" id="AD8A5D41-B222-7C4A-E230-65D9F8AC1D95">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>D0BC5957-4A00-8F57-4C56-CDF118AA06B6</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tempo" id="71933E86-C494-358D-2E65-203560399D4C">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>ACE5CAB5-27C0-77AE-03A9-B9FBBD307C0B</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qualidade" id="FBDF5EDE-B618-6298-7834-6CF7F56B13E8">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>065951BD-F04A-F39C-8921-583F45F6A546</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Seguradora_registro_susep" id="3FC6BBA6-0C35-1514-3A19-5EC36C23CCF1">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>D372F143-1C70-C7E9-CAE3-2282451424A8</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDA5F3E0-15FA-3BFD-8FF5-842A6B9D3B5D" referredColumn="54981DF1-D634-2700-4A6D-F6B72473A9D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FA686AF-DC0B-E055-C568-D029F0561D46" name="Servico_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>BCC98E37-5FE5-931D-8D82-C9E9D8D70A7D</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4B5BDEE-F1FB-7AEB-C577-993AD29DC6DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77E776A3-70EC-3AD5-37C4-5EF07FDF4DE0" name="Servico_Seguradora_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>108436D5-6A6F-5653-3AF0-000BADF9E077</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FC6BBA6-0C35-1514-3A19-5EC36C23CCF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

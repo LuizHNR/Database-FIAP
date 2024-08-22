@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4BECEA0D-1A45-2030-041E-8AE7C61F5B5F" name="Avaliacao">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>F9411E08-FC1C-005E-D144-27F5F3E451C2</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_avaliacao" id="C9FAC971-D2A6-20E5-DFC5-85672B5B2FB4">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>11C64F34-6328-74BF-F8A5-1672A10C4E21</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="7EB1AEB4-A299-215F-507C-25020E4DB18A">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>A6861B93-D75B-A26F-26C1-0F39E35EE3A0</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="94C29387-D503-B65A-2AF0-8B42DA512AEC">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>F95A9AE8-1BA0-0747-2C01-E0B70F76FF2A</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentario" id="EC5AAEA4-2345-96D7-E9A1-48D44F3634A1">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>4228D3BB-5F22-DEB3-AFF9-3ED0141FEADD</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qualidade" id="20A50D44-171F-2FF0-E1A2-E44CE44E5AF8">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>90A97D3E-9E98-A307-4B9F-DAD9D2B2C8C8</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Conta_email" id="B21D6378-30A9-39E9-AC57-7574ED19C7BB">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>2094AA64-52A0-1942-E76C-57293FB830E3</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E9FDDC9-3C33-7AD0-2C19-4753398EF4C8" referredColumn="609F0E61-B3F4-8544-E933-8B571ACE58D8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="68D8DDBE-146A-F3E2-87F2-52C313C595CA" name="Avaliacao_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>6FC798AD-C587-97F5-1B5F-6B24A4FC4A56</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9FAC971-D2A6-20E5-DFC5-85672B5B2FB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35517D8F-9715-7319-6AE9-144387B4434F" name="Avaliacao_Conta_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>DF4868CE-7746-70B1-B839-20B9F3C4AADD</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B21D6378-30A9-39E9-AC57-7574ED19C7BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

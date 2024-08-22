@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E46208B1-70E8-F6B3-9B7E-303BA9294E79" containerWithKeyObject="3EBCB148-884D-E930-AAA3-D9029AA69E50" localFKIndex="944F98D3-C55F-A0D9-A77A-6D9EA77CD47D" name="Clientes_Seguradora_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>A652D1C5-72DF-04BA-264F-84893886A6A3</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<referredTableLongName>Seguradora</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>62F2CF90-4F74-4CF7-724C-DE1E7E3FDE09</referredTableID>
+<keyObject>E57E7519-A1F1-6ADB-3750-0D488AC79E40</keyObject>
+<referredKeyID>E57E7519-A1F1-6ADB-3750-0D488AC79E40</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>registro_susep</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

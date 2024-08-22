@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="realiza" directorySegmentName="seg_0" id="108436D5-6A6F-5653-3AF0-000BADF9E077">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:39:52 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<sourcePk>F31F7A54-5CF5-9D00-7C1D-3BF8F95272DD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>999BA69E-E539-CD6D-5CF2-D12C245BDF9B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2394117C-44DB-E438-035D-650C5F11D312</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

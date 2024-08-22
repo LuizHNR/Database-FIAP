@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D609AF2B-FFDC-A03A-5598-8EC0F24F574D" name="Conta">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>CA986153-7BF1-E63F-A4FE-B6F946EBC73E</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="email" id="609F0E61-B3F4-8544-E933-8B571ACE58D8">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>8117FE13-1B25-4A35-48A0-391AAC669C10</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="6A54CAFB-2672-E322-68C6-E3689CC8DD87">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>27126851-69C8-573C-5156-81B2A42FFEB7</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="888F9681-25F7-BF1B-2456-4ACD52946243">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>71CF9209-0AF0-4A32-F0D5-266B22114D3E</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_conta" id="ACA251F2-6910-D6E0-863B-01B5049C3B3F">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>CF7F0FE6-6C95-BBDD-4800-DF137E544E58</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Oficina_Mecanico_id_mecanico" id="6755164D-0A68-97BD-1638-499A0F31742A">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>495B0A12-3C2C-0C4C-A9A6-AF5E5072AB86</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19562BE8-A4AD-2093-8318-202E4449A633" referredColumn="2F94ED1F-3E64-FBC9-C072-343AE09A1BFA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C29E57C-0C68-C2EB-22DF-4AFD5AE37B52" name="Conta_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>1E7EE773-C32B-8A44-297F-2045E62DD762</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="609F0E61-B3F4-8544-E933-8B571ACE58D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6212091-1B56-B1D8-BB87-17842E2D2B09" name="Conta__IDX">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DEC4F187-A367-5876-145D-2F59BED413A2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6755164D-0A68-97BD-1638-499A0F31742A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C06D38BF-1E5A-ED6B-13C2-9A89C288EEBE" name="Conta_Oficina_Mecanico_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>DEC4F187-A367-5876-145D-2F59BED413A2</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6755164D-0A68-97BD-1638-499A0F31742A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

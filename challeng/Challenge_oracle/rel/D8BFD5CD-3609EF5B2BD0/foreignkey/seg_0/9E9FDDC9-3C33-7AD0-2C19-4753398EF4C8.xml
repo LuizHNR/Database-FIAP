@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9E9FDDC9-3C33-7AD0-2C19-4753398EF4C8" containerWithKeyObject="4BECEA0D-1A45-2030-041E-8AE7C61F5B5F" localFKIndex="35517D8F-9715-7319-6AE9-144387B4434F" name="Avaliacao_Conta_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>DF4868CE-7746-70B1-B839-20B9F3C4AADD</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<referredTableLongName>Conta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D609AF2B-FFDC-A03A-5598-8EC0F24F574D</referredTableID>
+<keyObject>8C29E57C-0C68-C2EB-22DF-4AFD5AE37B52</keyObject>
+<referredKeyID>8C29E57C-0C68-C2EB-22DF-4AFD5AE37B52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>email</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

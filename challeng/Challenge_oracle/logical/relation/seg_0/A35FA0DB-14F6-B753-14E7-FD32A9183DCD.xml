@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="executa" directorySegmentName="seg_0" id="A35FA0DB-14F6-B753-14E7-FD32A9183DCD">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 18:46:00 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2394117C-44DB-E438-035D-650C5F11D312</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8B63A64E-405C-12A4-DFC1-49822864C6E2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

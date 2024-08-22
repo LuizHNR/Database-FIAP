@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C676AA45-96D8-B19C-2A18-E4D18BA5D62D" containerWithKeyObject="F33E58B3-61AA-901D-8404-FF26C46DEE88" localFKIndex="C18E2CAC-12E1-A796-3199-F435D96436E2" name="causa_Avaliacao_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>BCA33057-E097-2BB6-1735-62D226C346A7</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<referredTableLongName>Avaliacao</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4BECEA0D-1A45-2030-041E-8AE7C61F5B5F</referredTableID>
+<keyObject>68D8DDBE-146A-F3E2-87F2-52C313C595CA</keyObject>
+<referredKeyID>68D8DDBE-146A-F3E2-87F2-52C313C595CA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_avaliacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

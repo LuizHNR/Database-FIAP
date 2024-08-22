@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F33E58B3-61AA-901D-8404-FF26C46DEE88" name="causa">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Servico_id_servico" id="9FDED53A-5480-8340-4B59-12AD9E3FE628">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="212F6B84-6433-398A-942E-E74729671FF8" referredColumn="E4B5BDEE-F1FB-7AEB-C577-993AD29DC6DE"/>
+</associations>
+</Column>
+<Column name="Avaliacao_id_avaliacao" id="C2E6863F-DB36-3A8E-570C-3AB0260CFBD0">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C676AA45-96D8-B19C-2A18-E4D18BA5D62D" referredColumn="C9FAC971-D2A6-20E5-DFC5-85672B5B2FB4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4209576-E212-480F-E662-C22D03F4C830" name="causa_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FDED53A-5480-8340-4B59-12AD9E3FE628"/>
+<colUsage columnID="C2E6863F-DB36-3A8E-570C-3AB0260CFBD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF25A09E-7CC5-845E-6CAD-3D84B184ED8D" name="causa_Servico_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>BCA33057-E097-2BB6-1735-62D226C346A7</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FDED53A-5480-8340-4B59-12AD9E3FE628"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C18E2CAC-12E1-A796-3199-F435D96436E2" name="causa_Avaliacao_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>BCA33057-E097-2BB6-1735-62D226C346A7</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2E6863F-DB36-3A8E-570C-3AB0260CFBD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

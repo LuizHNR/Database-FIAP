@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="dispoe" directorySegmentName="seg_0" id="DEC4F187-A367-5876-145D-2F59BED413A2">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:05:07 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<engineerTo>
+<item key="D8BFD5CD-3143-E0E8-D260-3609EF5B2BD0" value="true"/>
+</engineerTo>
+<sourcePk>59B73EB2-6C6C-2DD6-61C4-B15151378514</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BF3FFBC3-F80E-D745-574E-19A1FC13C79F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>CA986153-7BF1-E63F-A4FE-B6F946EBC73E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

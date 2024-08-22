@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8F2912F-B5DE-B64D-21AA-BAA9A0D3DBDE" name="escolhe">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Clientes_cpf" id="4BC7D3E1-F633-663A-ECCF-4E0982115383">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72335866-10A1-D925-2227-840C104D85F3" referredColumn="C368EC63-59D2-1649-121D-F6A28CCA9EAE"/>
+</associations>
+</Column>
+<Column name="Oficina_Mecanico_id_mecanico" id="F9CEB508-CEF5-827A-1AF0-CAC71911281F">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="796937F3-CACF-CA4F-AA5B-0E3FA7318E28" referredColumn="2F94ED1F-3E64-FBC9-C072-343AE09A1BFA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5D8CFB3-8FCA-74FE-EF5A-546B18C7CB44" name="escolhe_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BC7D3E1-F633-663A-ECCF-4E0982115383"/>
+<colUsage columnID="F9CEB508-CEF5-827A-1AF0-CAC71911281F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D982A7B-C88F-9DDD-2D8B-D07C9F0D0F3D" name="escolhe_Clientes_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>9259CF78-A2EA-DA80-E6CE-4AE8A289706D</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BC7D3E1-F633-663A-ECCF-4E0982115383"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2220B3A4-04DC-4253-CB88-E37D91A12AC3" name="escolhe_Oficina_Mecanico_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>9259CF78-A2EA-DA80-E6CE-4AE8A289706D</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9CEB508-CEF5-827A-1AF0-CAC71911281F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

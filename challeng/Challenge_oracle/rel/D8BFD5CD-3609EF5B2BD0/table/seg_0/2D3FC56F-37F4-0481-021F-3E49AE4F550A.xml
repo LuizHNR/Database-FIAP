@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D3FC56F-37F4-0481-021F-3E49AE4F550A" name="executa">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Servico_id_servico" id="E5BE34DD-2FC0-6B22-6515-97517FEEDB96">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84738327-7FB3-4F26-FAF3-E81483240042" referredColumn="E4B5BDEE-F1FB-7AEB-C577-993AD29DC6DE"/>
+</associations>
+</Column>
+<Column name="Guincho_id_guincho" id="79F95079-CC68-FC53-FF4B-B76207535525">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70BC7521-75B3-B0B3-1F4D-AE3D770349B4" referredColumn="BFE04945-9193-0440-B190-BFDE57DD54B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4FA9F25-F2E0-CAE1-1CDE-66C245BC5782" name="executa_PK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5BE34DD-2FC0-6B22-6515-97517FEEDB96"/>
+<colUsage columnID="79F95079-CC68-FC53-FF4B-B76207535525"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10B187A6-5AAD-F0FD-7E2B-A0A9887BBC00" name="executa_Servico_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>A35FA0DB-14F6-B753-14E7-FD32A9183DCD</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5BE34DD-2FC0-6B22-6515-97517FEEDB96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24F6EE3A-9788-5A9F-F874-3CBB0C878A58" name="executa_Guincho_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>A35FA0DB-14F6-B753-14E7-FD32A9183DCD</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79F95079-CC68-FC53-FF4B-B76207535525"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

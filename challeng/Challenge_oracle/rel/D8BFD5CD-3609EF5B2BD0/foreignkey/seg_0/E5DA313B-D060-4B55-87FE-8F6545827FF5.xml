@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E5DA313B-D060-4B55-87FE-8F6545827FF5" containerWithKeyObject="4ADCADEB-4184-8804-B182-BAD6C8300617" localFKIndex="08EA4332-DFEA-4BEF-E972-DF7D4E94E5C2" name="Nota_fiscal_Servico_FK">
+<createdBy>Luiz</createdBy>
+<createdTime>2024-08-22 19:09:36 UTC</createdTime>
+<generatorID>889101C3-606C-5F8D-BF90-664ADBCEE80A</generatorID>
+<ownerDesignName>Challenge_oracle</ownerDesignName>
+<referredTableLongName>Servico</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FDFA2002-6C27-C930-7CF7-905754BF844C</referredTableID>
+<keyObject>8FA686AF-DC0B-E055-C568-D029F0561D46</keyObject>
+<referredKeyID>8FA686AF-DC0B-E055-C568-D029F0561D46</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_servico</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
