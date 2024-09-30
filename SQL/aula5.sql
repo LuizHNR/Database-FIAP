@@ -185,3 +185,8 @@ select * from Produto WHERE VAL_UNIT < 2;
 SELECT NOME_VEN, SALARIO_FIXO FROM VENDEDOR WHERE SALARIO_FIXO > 3500 ORDER by 2 desc;
 SELECT * from CLIENTE WHERE COD_CLIE >130 and COD_CLIE < 800;
 SELECT NOME_CLIE, UF, IE FROM CLIENTE WHERE UF != 'RJ' and UF != 'MG' and IE <2000;
+
+Outro Exercicio:
+Quais Vendedores terão salario maior que R$5000 com o aumento de 10% no salário atual? Exiba nome, salario atual 
+
+SELECT NOME_VEN "Nome Vendedor", SALARIO_FIXO "Salario Atual", SALARIO_FIXO * 1.1 "Salario Reajustado" FROM VENDEDOR WHERE SALARIO_FIXO * 1.1 > 5000 and SALARIO_FIXO < 5000
