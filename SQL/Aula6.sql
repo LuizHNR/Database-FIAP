@@ -5,23 +5,27 @@ Recriando nosso sistema
 operadores de banco de dados
 
 ----------------------------------------------Aula-----------------------------------------------------------------
+
 Criar um relatório que exiba todos os dados dos clientes de código 100 até 600(inclusive)
 Tradicional: SELECT * FROM CLIENTE WHERE COD_CLIE >= 100 and cod_clie <= 600;
 Op. de Bd: BETWEEN -- BETWEEN = Entre
 SELECT * FROM CLIENTE WHERE COD_CLIE BETWEEN 100 and 600;
 
 -------------------------------------------Atividade----------------------------------------------------------------
+
 Crie um relatório que exiba o nome dos clientes que estejam no intervalo de 'A' até 'p'
 -- SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE >= 'A' and NOME_CLIE <= 'Q'
 SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE BETWEEN 'A' and 'Q';
 
 ----------------------------------------------Aula--------------------------------------------------------------------
+
 Gerar um relatório que mostre o nome do CLIENTE, o estado onde mora, desde que seja do estado: SP, RJ, MG
 Tradicional: SELECT * from CLIENTE WHERE uf = 'SP' or uf = 'RJ' or uf = 'MG';
 Oo. de Bd: in(list) -- Em lista, Na lista
 SELECT * from CLIENTE WHERE uf in('SP','RJ','MG');
 
 ------------------------------------------Atividade------------------------------------------------------------------
+
 Crie um relatorio que mostre os clientes de codigo: 870,110,830,157.
 SELECT * FROM CLIENTE WHERE COD_CLIE in(870,110,830,157) ORDER BY 1;
 
@@ -49,3 +53,24 @@ SELECT * FROM CLIENTE WHERE COD_CLIE not BETWEEN 100 and 600;
 
 Quem são os clientes que possuem em seu nome a letra 'A'?
 SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE '%a%' or NOME_CLIE LIKE'%A%'
+
+Quem são os clientes que possuem em seu nome a letra 'A' no final?
+SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE '%a'
+
+Quem são os clientes que possuem em seu nome a letra 'A' no inicio?
+SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE 'A%'
+
+Quem são os clientes que possuem 5 letras em seu nome?
+SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE '_____';
+
+Quem são os clientes que possuem na penultima posição do seu nome a letra 'a'?
+SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE '%a_';
+
+not like = Negaçãoquem
+
+Quem são os clientes que não possuim a letra 'a' em seu namo?
+SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE not LIKE '%a_';
+
+------------------------------------------------------Atividade---------------------------------------------
+
+Mostre o nome dos lientes que possuem a letra 'i' ou a letra 'o' em seu nome
