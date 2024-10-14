@@ -19,4 +19,4 @@ Oo. de Bd: in(list) -- Em lista, Na lista
 SELECT * from CLIENTE WHERE uf in('SP','RJ','MG');
 
 Crie um relatorio que mostre os clientes de codigo: 870,110,830,157.
-SELECT * FROM CLIENTE WHERE COD_CLIE in(870,110,830,157);
+SELECT * FROM CLIENTE WHERE COD_CLIE in(870,110,830,157) ORDER BY 1;
