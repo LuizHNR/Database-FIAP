@@ -48,4 +48,4 @@ SELECT * FROM CLIENTE WHERE COD_CLIE not BETWEEN 100 and 600;
 ----------------------------------------------------Aula-------------------------------------------------------------
 
 Quem são os clientes que possuem em seu nome a letra 'A'?
-SELECT * from CLIENTE WHERE NOME_CLIE LIKE
+SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE '%a%' or NOME_CLIE LIKE'%A%'
