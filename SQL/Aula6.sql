@@ -94,4 +94,12 @@ SELECT COUNT(*), count(cep) from CLIENTE;
 
 Quantos clientes são do estado de são paulo
 
-SELECT COUNT(COD_CLIE) FROM CLIENTE where uf in 'SP'; 
+SELECT COUNT(COD_CLIE) FROM CLIENTE where uf in 'SP';
+
+----------------------------------------------------Aula------------------------------------------------------------
+
+SELECT max(SALARIO_FIXO) "Maior Valor", 
+min(SALARIO_FIXO) "Menor Valor", 
+avg(SALARIO_FIXO) "Media salarial",
+sum(SALARIO_FIXO) "Somatória"
+FROM VENDEDOR;
