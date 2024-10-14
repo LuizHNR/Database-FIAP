@@ -71,7 +71,16 @@ not like = Negaçãoquem
 Quem são os clientes que não possuim a letra 'a' em seu namo?
 SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE not LIKE '%a_';
 
-------------------------------------------------------Atividade---------------------------------------------
+------------------------------------------------------Atividade----------------------------------------------------
 
 Mostre o nome dos lientes que possuem a letra 'i' ou a letra 'o' em seu nome
 SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE'%i%' and NOME_CLIE not LIKE'%o%' or NOME_CLIE like'%o%' and NOME_CLIE not LIKE'%i%';
+
+------------------------------------------------------Aula----------------------------------------------------------
+
+Operadores matemaricos de grupo
+
+Mostre quantos clientes existem na tabela cliente.
+SELECT * FROM CLIENTE;
+SELECT COD_CLIE from CLIENTE;
+SELECT COUNT(COD_CLIE) from CLIENTE
