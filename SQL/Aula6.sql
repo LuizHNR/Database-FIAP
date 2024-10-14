@@ -74,3 +74,4 @@ SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE not LIKE '%a_';
 ------------------------------------------------------Atividade---------------------------------------------
 
 Mostre o nome dos lientes que possuem a letra 'i' ou a letra 'o' em seu nome
+SELECT NOME_CLIE from CLIENTE WHERE NOME_CLIE LIKE'%i%' and NOME_CLIE not LIKE'%o%' or NOME_CLIE like'%o%' and NOME_CLIE not LIKE'%i%';
