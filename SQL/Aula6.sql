@@ -83,4 +83,9 @@ Operadores matemaricos de grupo
 Mostre quantos clientes existem na tabela cliente.
 SELECT * FROM CLIENTE;
 SELECT COD_CLIE from CLIENTE;
-SELECT COUNT(COD_CLIE) from CLIENTE
+SELECT COUNT(COD_CLIE) from CLIENTE;
+
+COUNT - contator, opções * ou coluna
+
+SELECT COUNT(*) from CLIENTE; -- Retorna a coluna com maior resultado
+SELECT COUNT(*), count(cep) from CLIENTE;
