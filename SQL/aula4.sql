@@ -1,7 +1,7 @@
 Aula 1 - 20/08/24
 
--- comentários de linha
-/* comentários várias linhas*/
+-- comentï¿½rios de linha
+/* comentï¿½rios vï¿½rias linhas*/
 
 
 Parte 1 - comandos DDL - estrutura
@@ -24,7 +24,7 @@ Sintaxe: create table table_name (column_name1 datatype(size) [constraint],
                                   column_name2 datatype(size) [constraint],
                                   ......................);
                                   
-obs: constraint é opcional, nem todas as colunas tem
+obs: constraint ï¿½ opcional, nem todas as colunas tem
 
 Exibindo a estrutura de uma tabela
 
@@ -32,7 +32,7 @@ sintaxe: desc table_name;
 
 desc funcionario;
 
-criando a tabela funcionário:
+criando a tabela funcionï¿½rio:
 
 
 create table funcionario (mat_fun Number(4) Primary key,
@@ -61,7 +61,7 @@ create table cargo (cd_cargo number(4) constraint cargo_cd_pk1 primary key,
                                          constraint cargo_nm_uk1 unique,
                     salario number(10,2));
                     
-Tabela: Funcionário, já existe???? vamos apagar
+Tabela: Funcionï¿½rio, jï¿½ existe???? vamos apagar
 
 Apagando uma tabela sem relacionamento
 
@@ -79,7 +79,7 @@ create table funcionario_2024
  
  obs fk: column_name datatype(syze) [constraint] references table_name
  
- references é a criação da foreign key (fk) ou chave estrangeira
+ references ï¿½ a criaï¿½ï¿½o da foreign key (fk) ou chave estrangeira
  
  Aula 2 - 02/09/24 - criando relacionamento 1 - 1
  
@@ -90,10 +90,10 @@ create table funcionario_2024
                        nm_pess2 varchar(30) not null,
                        fk_pess number(3) unique references pessoa1);
                        
- DML - Alteração de estrutura - tabela
+ DML - Alteraï¿½ï¿½o de estrutura - tabela
  
  sintaxe: alter table table_name.....
- variações: incluir coluna: add column_name
+ variaï¿½ï¿½es: incluir coluna: add column_name
             incluir constraint: add constraint constraint_name
             modificar tipo de dados: modify
             modificar tamanho: modify
@@ -105,25 +105,25 @@ drop table teste cascade constraints;
             
 create table teste (nome number(4));            
 
-- incluir na tabela teste a coluna código de tipo numérica com 4 posições.
+- incluir na tabela teste a coluna cï¿½digo de tipo numï¿½rica com 4 posiï¿½ï¿½es.
 desc teste;
 alter table teste add codigo number(4);
 
-- incuir na coluna código da tabela teste a pk.
+- incuir na coluna cï¿½digo da tabela teste a pk.
 alter table teste add constraint teste_cd_pk primary key (codigo);
 ou
 alter table teste add primary key (codigo);
 
-- alterar o tipo de dados da coluna nome para alfanumérico com 30 posições
+- alterar o tipo de dados da coluna nome para alfanumï¿½rico com 30 posiï¿½ï¿½es
 alter table teste modify nome varchar(30);
 
-- alterar o tamanho da coluna nome para 45 posições
+- alterar o tamanho da coluna nome para 45 posiï¿½ï¿½es
 alter table teste modify nome varchar(45);
 
-- apagar a pk da coluna código
+- apagar a pk da coluna cï¿½digo
 alter table teste drop constraint teste_cd_pk;
 
-- apagar a coluna na código da tabela teste.
+- apagar a coluna na cï¿½digo da tabela teste.
 alter table teste drop column codigo;
 
 -renomear a coluna nome para nome_cliente.
@@ -143,7 +143,7 @@ sintaxe: insert into table_name values (value_column1,......, value_columnN);
          values (value_column1,......, value_columnN);
 
 usando nulo = null
-dados não numéricos precisam de ''
+dados nï¿½o numï¿½ricos precisam de ''
 
 Exemplificar;
 
@@ -156,39 +156,39 @@ insert into cargo values (2,'DBA', 12500.80);
 incluir os seguintes dados na tabela cargo
 3 - CEO - 25000
 4 - Adm Redes - 8500
-5 - Estágio - 33000
+5 - Estï¿½gio - 33000
 
 insert into cargo values (3,'CEO', 25000);
 insert into cargo values (4,'Adm Redes', 8500);
-insert into cargo values (5,'Estágio', 33000);
+insert into cargo values (5,'Estï¿½gio', 33000);
 
-caso não tenha dados para uma ou mais colunas?????
+caso nï¿½o tenha dados para uma ou mais colunas?????
 
 6 - Adm. Seg - null
 select * from cargo;
 desc cargo
-versão 1: insert into cargo values (6,'Adm. Seg', null);
-versão 2: insert into cargo (cd_cargo, nm_cargo) values(7,'Adm Seg');
+versï¿½o 1: insert into cargo values (6,'Adm. Seg', null);
+versï¿½o 2: insert into cargo (cd_cargo, nm_cargo) values(7,'Adm Seg');
 validando os dados
 commit;
 
-Inserir 3 linhas de dados na tabela funcionário a seu critério
+Inserir 3 linhas de dados na tabela funcionï¿½rio a seu critï¿½rio
 desc funcionario_2024;
-procurando pelo padrão de data
+procurando pelo padrï¿½o de data
 select sysdate from dual; -- acha a data cadastrada
 insert into funcionario_2024 values (1,'Marcel','10-jan-20', 70000,'M',2);
 insert into funcionario_2024 values (2,'Joana','20-dec-22',50000,'F',1);
 insert into funcionario_2024 values (3,'Ricardo',sysdate,null,'M',6);
 commit;
 select * from funcionario_2024;
-cuidado com os valores de FK, só recebe dados já cadastrado na pk
+cuidado com os valores de FK, sï¿½ recebe dados jï¿½ cadastrado na pk
 insert into funcionario_2024 values (4,'Ricardo',sysdate,null,'M',8);
 
 Aula - 16/09/24
 
-Trabalhando a regra check - validação
+Trabalhando a regra check - validaï¿½ï¿½o
 
-Alterando a padrão da data
+Alterando a padrï¿½o da data
 ALTER SESSION SET NLS_DATE_FORMAT = 'dd-mm-yyyy'
 
 Exemplo 1: criando tabela
@@ -215,15 +215,15 @@ alter table ALU_NOS add constraint alu_idade_ck check (idade >= 18);
 insert into alu_nos values(1, 'marcel', 15); -- Erro
 insert into alu_nos values(2, 'marcel', 30); -- Ok
 
-Atualização de dados
+Atualizaï¿½ï¿½o de dados
 
-Operadores aritméticos + - * / ()
+Operadores aritmï¿½ticos + - * / ()
 Operadores relacionais > >= < <= = <> ou !=
-Operadores lógicos and or not
+Operadores lï¿½gicos and or not
 
-Update table_name set column_name where condição
+Update table_name set column_name where condiï¿½ï¿½o
 
-Obs: update sem where provoca atualização em todas as linhas de uma tabela
+Obs: update sem where provoca atualizaï¿½ï¿½o em todas as linhas de uma tabela
 
 desc funcionario
 select * from funcionario
@@ -234,30 +234,30 @@ insert into funcionario values(3, 'Glaucia', sysdate - 100, 12500, 'F');
 Atualizar o salario do funcionario Adriano em 12500.
 Update funcionario set salario = 12500 where mat_fun = 1;
 
-Para os funcionários de código 2 e 3 atualize o salário para 10000
+Para os funcionï¿½rios de cï¿½digo 2 e 3 atualize o salï¿½rio para 10000
 Update funcionario set salario = 10000 where mat_fun > 1;
 ou
 Update funcionario set salario = 10000 where mat_fun = 2 or mat_fun = 3;
 
-Aumente em 10% o salário de todos os funcionários
+Aumente em 10% o salï¿½rio de todos os funcionï¿½rios
 update funcionario set salario = salario * 1.1;
 
 select * from funcionario;
-Atualize o nome do funcionário Adriano para Adriano Mattos.
+Atualize o nome do funcionï¿½rio Adriano para Adriano Mattos.
 update funcionario set nm_fun = 'Adriano Mattos'
 where mat_fun = 1;
 
-Troque a data de admissão da funcionária Samira para Hoje.
+Troque a data de admissï¿½o da funcionï¿½ria Samira para Hoje.
 update funcionario set dt_adm = sysdate where mat_fun = 2;
 
-validação dos dados - migração da memória RAM par HD
+validaï¿½ï¿½o dos dados - migraï¿½ï¿½o da memï¿½ria RAM par HD
 
 commit;
 
 Apagar linhas
 
 delete from table_name - apaga tudo
-delete from table_name where condição - apaga de acordo com a condição
+delete from table_name where condiï¿½ï¿½o - apaga de acordo com a condiï¿½ï¿½o
 
 delete from funcionario where mat_fun = 2;
 delete from funcionario;
@@ -267,7 +267,7 @@ select * from cargo
 desc funcionario
 
 Apagar a coluna salario da tabela funcionario e incluir o relacionamento de
-1 - N  entre cargo(1) e funcionário(N)
+1 - N  entre cargo(1) e funcionï¿½rio(N)
 
 alter table funcionario drop column salario;
 alter table funcionario add fk_cargo references cargo;
@@ -391,7 +391,7 @@ insert into item_pedido values ('143','31','20');
 insert into item_pedido values ('143','78','10');
 commit;
 
-criando relatórios - DQL
+criando relatorios - DQL
 
 Sintaxe: select * from table_name;
          select column_name1, column_name2,...., column_nameN
@@ -401,20 +401,20 @@ Exemplos:
 Select * from cliente;
 select nome_clie, cidade from cliente;
 
-Criar um relatório que exiba os dados dos vendedores.
+Criar um relatï¿½rio que exiba os dados dos vendedores.
 select * from vendedor;
-Mostre o nome do produto e seu preço.
+Mostre o nome do produto e seu preï¿½o.
 select descricao, val_unit from produto;
 
 Apelidando as colunas
- - colocar sempre após o nome da coluna
+ - colocar sempre apï¿½s o nome da coluna
  - para duas ou + palavras usa-se "
  
  Exemplo:
  select * from vendedor;
- select nome_ven "Nome", salario_fixo "salário vendedor" from vendedor;
+ select nome_ven "Nome", salario_fixo "salï¿½rio vendedor" from vendedor;
  
- Classificando a saída de dados
+ Classificando a saï¿½da de dados
  Comando Order by column_name type
  Type - asc - crescente - default
       - desc - decrescente
@@ -434,34 +434,34 @@ Apelidando as colunas
  select * from cliente;
  
  Exemplos:
- Crie um relatório que exiba os clientes que moram no estado de São Paulo.
+ Crie um relatï¿½rio que exiba os clientes que moram no estado de Sï¿½o Paulo.
  select * from cliente where uf = 'SP';
- Crie um relatório que exiba os clientes que moram no estado de São Paulo, atenção
+ Crie um relatï¿½rio que exiba os clientes que moram no estado de Sï¿½o Paulo, atenï¿½ï¿½o
  as letras maiusculas ou minisculas.
  select * from cliente where uf = 'SP' or uf = 'sp';
  
- Exercícios;
+ Exercï¿½cios;
 - Mostre os dados da tabela produto.
    select * from produto;
-- Mostre os produtos que não custam mais de R$2,00.
+- Mostre os produtos que nï¿½o custam mais de R$2,00.
    select * from produto where val_unit < 2;
    select * from produto where not val_unit > 2;
-- Quem são os vendedores que ganham acima de R$3.500,00? Exiba nome e salário
-   classificados pelo salário de forma decrescente.
+- Quem sï¿½o os vendedores que ganham acima de R$3.500,00? Exiba nome e salï¿½rio
+   classificados pelo salï¿½rio de forma decrescente.
    select nome_ven, salario_fixo from vendedor
    where salario_fixo > 3500
    order by 2 desc;
-- Mostre os pedidos dos clientes de código 130 até 800.
+- Mostre os pedidos dos clientes de cï¿½digo 130 atï¿½ 800.
    select * from pedido where cod_clie > 130 and cod_clie < 800;
-- Quem são os clientes (nome, uf e ie) que não moram no estado do Rio de Janeiro
-   e Minas Gerais e que a inscrição estadual seja menor que 2000?
+- Quem sï¿½o os clientes (nome, uf e ie) que nï¿½o moram no estado do Rio de Janeiro
+   e Minas Gerais e que a inscriï¿½ï¿½o estadual seja menor que 2000?
  select nome_clie, uf, ie from cliente
  where uf != 'RJ' and uf != 'MG' and ie < 2000;
  
- Quais vendedores terão salário maior que R$5.000,00 com um aumento de 10% no salário
- atual? Exiba nome, salário atual e salário rejustado.
- select nome_ven "Nome Vendedor", salario_fixo "Salário Atual",
- salario_fixo * 1.1 "Salário Reajustado"
+ Quais vendedores terï¿½o salï¿½rio maior que R$5.000,00 com um aumento de 10% no salï¿½rio
+ atual? Exiba nome, salï¿½rio atual e salï¿½rio rejustado.
+ select nome_ven "Nome Vendedor", salario_fixo "Salï¿½rio Atual",
+ salario_fixo * 1.1 "Salï¿½rio Reajustado"
  from vendedor
  where salario_fixo * 1.1 > 5000 and salario_fixo < 5000
  
