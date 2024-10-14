@@ -89,3 +89,9 @@ COUNT - contator, opções * ou coluna
 
 SELECT COUNT(*) from CLIENTE; -- Retorna a coluna com maior resultado
 SELECT COUNT(*), count(cep) from CLIENTE;
+
+-------------------------------------------------------Atividade----------------------------------------------------
+
+Quantos clientes são do estado de são paulo
+
+SELECT COUNT(COD_CLIE) FROM CLIENTE where uf in 'SP'; 
