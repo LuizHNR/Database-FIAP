@@ -119,4 +119,10 @@ select uf, count(uf) from cliente group by uf order by 1;
 
 Quantos vendedores existem por comissão?
 
-select * from VENDEDOR order by COMISSAO;
+select comissao, count(COMISSAO) from VENDEDOR group BY COMISSAO;
+
+quantos pedidos existem por VENDEDOR?
+
+SELECT COD_VEN, count(NUM_PEDIDO) from PEDIDO group by COD_VEN order by 1;
+
+select * from pedido where cod_ven = 11;
