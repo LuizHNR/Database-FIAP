@@ -103,3 +103,16 @@ min(SALARIO_FIXO) "Menor Valor",
 avg(SALARIO_FIXO) "Media salarial",
 sum(SALARIO_FIXO) "Somatória"
 FROM VENDEDOR;
+
+
+-----------------------------------------------------Aula--------------------------------------------------------------
+
+Aula 6 - 14/10/24 - Relatórios´
+
+Criar um relatório que exiba quantos clientes existem por estado
+
+select uf from cliente order by 1;
+
+usando agrupamento
+
+select uf, count(uf) from cliente group by uf order by 1;
