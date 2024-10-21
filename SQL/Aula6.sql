@@ -116,3 +116,7 @@ select uf from cliente order by 1;
 usando agrupamento
 
 select uf, count(uf) from cliente group by uf order by 1;
+
+Quantos vendedores existem por comissão?
+
+select * from VENDEDOR order by COMISSAO;
