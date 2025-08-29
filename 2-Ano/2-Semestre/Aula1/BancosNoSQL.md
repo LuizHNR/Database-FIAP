@@ -1,6 +1,6 @@
 # Bancos NoSQL
 
-<img src = "/Images/mongo.jpg">
+<img src = "/Images/mongo.jpg" alt="Rank do NoSQL">
 
 É **não somente SQL**, utiliza mecanismos de armazenamento e de recuperação de dados diferentes dos bancos relacionais
 
