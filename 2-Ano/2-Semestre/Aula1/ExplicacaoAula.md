@@ -1,6 +1,6 @@
 # Big data
 
-<img src = "/Images/ranking.jpg">
+<img src = "/Images/ranking.jpg" alt="Ranking do banco de dados">
 
 ## Tipos de dados
 
