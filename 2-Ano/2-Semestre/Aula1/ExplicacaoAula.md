@@ -1,6 +1,6 @@
 # Big data
 
-<img src = "/Images/ranking.jpg">
+<img src = "../../2-Semestre/Aula1/Images/ranking.jpg">
 
 ## Tipos de dados
 

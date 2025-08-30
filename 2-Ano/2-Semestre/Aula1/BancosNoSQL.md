@@ -1,6 +1,6 @@
 # Bancos NoSQL
 
-<img src = "/Images/mongo.jpg">
+<img src = "../../2-Semestre/Aula1/Images/mongo.jpg">
 
 É **não somente SQL**, utiliza mecanismos de armazenamento e de recuperação de dados diferentes dos bancos relacionais
 
