@@ -1,0 +1,60 @@
+🎬 Exercícios com o Dataset "Sample Mflix"
+1. Selecionar o banco de dados
+
+use sample_mflix
+
+
+📌 Objetivo: Ensinar como mudar para o banco de dados correto.
+
+2. Listar os documentos da coleção movies
+db.movies.find().limit(5)
+
+
+📌 Objetivo: Mostrar os primeiros 5 filmes para explorar a estrutura dos documentos.
+
+3. Buscar filmes lançados em 1994
+db.movies.find({ year: 1994 })
+
+
+📌 Objetivo: Introduzir filtros simples com operadores de igualdade.
+
+4. Buscar filmes com classificação maior que 8
+db.movies.find({ "imdb.rating": { $gt: 8 } })
+
+
+📌 Objetivo: Ensinar operadores de comparação ($gt, $lt, etc.).
+
+5. Contar quantos filmes têm o gênero “Comedy”
+db.movies.countDocuments({ genres: "Comedy" })
+
+
+📌 Objetivo: Mostrar como contar documentos com critérios específicos.
+
+6. Inserir um novo comentário na coleção comments
+db.comments.insertOne({
+  name: "Aluno Mongo",
+  email: "aluno@exemplo.com",
+  movie_id: ObjectId("573a13acf29313caabd29647"),
+  text: "Excelente filme!",
+  date: ISODate("2023-09-05T14:00:00Z")
+})
+
+
+📌 Objetivo: Praticar inserção de documentos com tipos de dados variados.
+
+7. Atualizar o nome de um usuário na coleção users
+db.users.updateOne(
+  { name: "João" },
+  { $set: { name: "João Silva" } }
+)
+
+
+📌 Objetivo: Ensinar atualização com $set.
+
+8. Remover todos os comentários de um usuário específico
+db.comments.deleteMany({ name: "Aluno Mongo" })
+
+
+📌 Objetivo: Mostrar como deletar múltiplos documentos com um critério.
+
+Se quiser, posso transformar isso em um roteiro de aula ou até em um quiz interativo para revisar com os alunos. Quer seguir por esse caminho?
